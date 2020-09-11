@@ -1,0 +1,4 @@
+1. There are 12 div elements. 
+2. 64 px.
+3. The color code is #009688.
+4. nav-footer

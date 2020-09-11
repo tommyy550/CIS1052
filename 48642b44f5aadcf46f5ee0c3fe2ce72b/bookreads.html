@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="user-activity.css">
+        <link rel="stylesheet" href="news-feed.css">
+        <link rel="stylesheet" href="spotlight.css">
+    </head>
+    <body>
+        <header class="top-nav">
+            <h1>BookReads</h1>
+            <nav class="main-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Books</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <i class="fa fa-user"></i>
+            </div>
+        </header>
+        <main class="page-content">
+            <div class="user-activity">
+                <header>Recently Read</header>
+                <div class="currently-reading">
+                    <section>
+                        <header>
+                            The Oxford English Dictionary
+                            <em>By: Oxford University Press</em>
+                        </header>
+                        <img src="oed.jpg">
+                    </section>
+                    <section>
+                        <header>
+                            The Way of Kings
+                            <em>By: Brandon Sanderson</em>
+                        </header>
+                        <img src="wayOfKings.jpg">
+                    </section>
+                </div>
+                <div class="reading-challenge">
+                    <p>You have completed <strong>28 out of 30</strong> books from your reading goal!</p>
+                </div>
+            </div>
+            <div class="news-feed">
+                <article>
+                    <header>Add a review here!</header>
+                    <input type="text">
+                </article>
+                <article class="review">
+                    <header><span user="4321">Alice</span> reviewed <span book="234">Welcome to Nightvale</span>
+                        <span author="4320">By Joseph Fink</span>
+                    </header>
+                    <div class="review-body">
+                        <img src="welcomeToNightvale.jpg">
+                        <div>
+                            <p>Alice gave Welcome to Nightvale 5 stars!</p>
+                            <p>Night Vale is a small desert town where all the conspiracy theories you've ever heard are actually true.</p>
+                        </div>
+                    </div>
+                    <footer class="comment-footer">
+                        <label>Leave a comment here: <input type="text"></label>
+                    </footer>
+                </article>
+                <article class="review">
+                    <header><span user="1234">Bob</span> reviewed <span book="456">Guards! Guards!</span>
+                        <span author="1233">By Terry Pratchett</span>
+                    </header>
+                    <div class="review-body">
+                        <img src="guardsguards.jpg">
+                        <div>
+                            <p>Bob gave Guards! Guards! 4 stars!</p>
+                            <p>Here there be dragons... and the denizens of Ankh-Morpork wish one huge firebreather would return from whence it came.</p>
+                        </div>
+                    </div>
+                    <footer class="comment-footer">
+                        <label>Leave a comment here: <input type="text"></label>
+                    </footer>
+                </article>
+                <article id="spotlight">
+                    <!-- Please only edit this section. Any other changes to this HTML document will be ignored when grading. -->
+                </article>
+            </div>
+        </main>
+    </body>
+</html>

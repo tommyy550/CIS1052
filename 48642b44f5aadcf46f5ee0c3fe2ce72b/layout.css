@@ -1,0 +1,30 @@
+/* Please put layout-related CSS in this file. I have given you a starting point and some hints for the layout */
+
+.page-content {
+    display: flex;
+}
+
+.user-activity {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    /* Hmm. Everything sure is close together... How do I add spacing again? */
+}
+
+.top-nav .main-links ul {
+    /* How can I make the bullet points disappear? I wonder if there's a tutorial for making a nice top nav somewhere
+     * on the internet... */
+}
+
+.user-activity img {
+    /* Those huge images are pretty annoying. Getting them out of the way, even temporarily, would be nice. */
+}
+
+.top-nav {
+    /* The top nav is looking pretty vertical. I wonder how I can make everything more horizontal? */
+}
