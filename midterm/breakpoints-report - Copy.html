@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <style>
+       .container {
+  display: grid;
+  height: 100%;
+  gap: 2px;
+  grid-template-columns:1 fr 2 fr 1 fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header header header" "toolbar content outline" "toolbar footer outline";
+}
+
+header {
+  border: solid 5px blue;
+  grid-area:header;
+}
+
+.toolbar {
+  border: solid 5px green;
+  grid-area:toolbar;
+}
+
+.content {
+  border: solid 5px red;
+  grid-area:content;
+}
+
+.outline {
+  border: solid 5px purple;
+  grid-area:outline;
+}
+
+footer {
+  border: solid 5px cyan;
+  grid-area:footer;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="container">
+      <header>Header</header>
+      <aside class="toolbar">Toolbar</aside>
+      <main class="content">Content</main>
+      <aside class="outline">Outline</aside>
+      <footer>Footer</footer>
+    </div>
+  </body>
+
+</html>

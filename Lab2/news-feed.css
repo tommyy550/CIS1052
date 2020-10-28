@@ -1,0 +1,56 @@
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    /* Hmm. Everything sure is close together... How do I add spacing again? */
+}
+
+section img{
+    padding-bottom: 20px;;
+}
+
+.news-feed article:not(#spotlight){
+    border: 1px solid gray;
+    /* need to fix this */
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:50px;
+    margin-left:100px;
+}
+
+.news-feed article header{
+    border-bottom: 2px solid gray;
+}
+
+.review-body{
+    display:flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    border-bottom:2px solid gray;
+    
+}
+
+.review-body div{
+    width:50%;
+    padding-left:5px;
+}
+
+/* makes textbox wide */
+[type~="text"]{
+    width:100%
+}
+/* bolds certain text */
+span[user]{
+    font-weight: bold;
+}
+span[book]{
+    font-weight: bold;
+}
+/* make images reasonable size */
+.review-body img{
+    width:6em;
+    height:8em;
+    padding-top:10px;
+}
+
+

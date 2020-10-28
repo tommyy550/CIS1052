@@ -1,0 +1,55 @@
+h3{
+    opacity:0.9;
+}
+h4{
+    opacity: 0.9;
+}
+
+body{
+    background-color:#d3bcbc;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+
+    .column {
+        float: left;
+        border: none;             
+    }
+
+    .column33 {
+        width: 33%;
+    }
+    .column50 {
+        width:50%;   
+     
+    }
+
+    .column25 {
+        width: 25%;
+    }
+
+    .clear {  /* stops the floating behavior, nothing below here will try to float up */
+        clear:both;
+    }
+
+
+
+}
+
+
+@media print { 
+        h1, h2, h3, h4, p, li{
+            font-size: 70%;
+        }
+        body{
+            background-color:white;
+        }
+
+
+
+   }
+

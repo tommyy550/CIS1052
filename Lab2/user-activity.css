@@ -1,0 +1,29 @@
+.user-activity {
+    width: 200px;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-activity img {
+    /* Those huge images are pretty annoying. Getting them out of the way, even temporarily, would be nice. */
+    width:5em;
+    height:7em;
+    padding-top: 5px;;
+    padding-bottom: 50px;;
+}
+
+/* Line under recently read */
+body > main > div.user-activity > header{
+    border-bottom: 2px solid gray;
+}
+
+.currently-reading section {
+    display: flex;  
+    flex-direction: row-reverse;
+}   
+
+.currently-reading section header{
+    width:50%;
+    padding:5px;
+}

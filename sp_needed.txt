@@ -1,3 +1,0 @@
-create new request (name change)
-get closed request by student id
-get active request by student id

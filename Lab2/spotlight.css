@@ -1,0 +1,41 @@
+#spotlight{
+    border: 3px dotted blue;
+    height:500px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.column{
+    width:50%;
+    float:left;
+}
+
+.column img{
+    width:8em;
+    height:10em;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top:5px;
+}
+
+.quotes{
+    font-style: italic;
+}

@@ -1,0 +1,6 @@
+header{
+    display:flex;
+    border: 2 px solid black;
+    height:200px;
+    justify-content: end;
+}

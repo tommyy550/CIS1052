@@ -1,0 +1,48 @@
+/* Please put layout-related CSS in this file. I have given you a starting point and some hints for the layout */
+
+.page-content {
+    display: flex;
+    border: 2px solid gray;
+    background-color:#F4F1EA ;
+}
+
+.top-nav .main-links ul {
+    /* How can I make the bullet points disappear? I wonder if there's a tutorial for making a nice top nav somewhere
+     * on the internet... */
+     display:flex;
+     justify-content: space-around;
+     list-style-type: none;   
+}
+
+.top-nav .main-links ul a{
+    color:#42ecf5;
+    text-decoration: none;;
+    padding-left:5px;
+}
+
+
+.top-nav {
+    /* The top nav is looking pretty vertical. I wonder how I can make everything more horizontal? */
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F1EA;
+    /* justify-content: space-between; */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.profile{
+    position: absolute;
+    right:40px;
+    top:40px;
+
+
+}
+
+.user-activity section{
+    border-bottom: 2px solid gray;
+}
+
+
+

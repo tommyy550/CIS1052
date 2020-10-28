@@ -1,0 +1,37 @@
+<html>
+
+<head></head>
+
+<body>
+    <label>Vitamin Extractor:
+        <input id="word-input" oninput="vitaminLetters2()">
+    </label>
+    <p>We were able to extract <em id="num-vitamins"></em> vitamins from this phrase</p>
+    <script>
+        function vitaminLetters(myString) {
+            let count = 0;
+            for (const letter of myString) {
+                if (letter === "a" || letter === "b" || letter === "c" || letter === "d" || letter === "e"
+                    || letter === "k") {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        function vitaminLetters2() {
+            const x=document.querySelector("#word-input")
+            let myString = x.value;
+            let count = 0;
+            for (const letter of myString) {
+                if (letter === "a" || letter === "b" || letter === "c" || letter === "d" || letter === "e"
+                    || letter === "k") {
+                    count++;
+                }
+            }
+            document.getElementById("num-vitamins").innerHTML=count;
+        }
+    </script>
+</body>
+
+</html>

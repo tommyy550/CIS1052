@@ -1,0 +1,14 @@
+p{
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 1.25;
+    color: green;
+}
+
+p.test{
+    color: red;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 99px;
+    font-size: 14px;
+}
