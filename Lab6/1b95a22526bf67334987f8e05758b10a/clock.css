@@ -1,0 +1,85 @@
+.clock {
+    width: 600px;
+    height: 600px;
+    border-radius: 999px;
+    border: solid 4px black;
+    position: relative;
+    background-color: #ccc;
+    transform: rotate(-90deg);
+}
+
+body {
+    background: #444;
+    display: flex;
+    justify-content: center;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 275px;
+    height: 4px;
+    background: black;
+    transform-origin: left;
+}
+
+.hand.hour {
+    background-color: #333;
+}
+
+.hand.minute {
+    background-color: green;
+}
+
+.hand.second {
+    background-color: blue;
+}
+
+.num {
+    position: absolute;
+    right: 4px;
+    top: calc(50% - 9px);
+    width: 296px;
+    transform-origin: left;
+    text-align: right;
+}
+
+.num span {
+    display: inline-block;
+}
+
+.num.one { transform: rotate(30deg) }
+.num.one span { transform: rotate(60deg) }
+
+.num.two { transform: rotate(60deg) }
+.num.two span { transform: rotate(30deg) }
+
+.num.three { transform: rotate(90deg) }
+
+.num.four { transform: rotate(120deg) }
+.num.four span { transform: rotate(-30deg) }
+
+.num.five { transform: rotate(150deg) }
+.num.five span { transform: rotate(-60deg) }
+
+.num.six { transform: rotate(180deg) }
+.num.six span { transform: rotate(-90deg) }
+
+.num.seven { transform: rotate(210deg) }
+.num.seven span { transform: rotate(-120deg) }
+
+.num.eight { transform: rotate(240deg) }
+.num.eight span { transform: rotate(-150deg) }
+
+.num.nine { transform: rotate(270deg) }
+.num.nine span { transform: rotate(180deg) }
+
+.num.ten { transform: rotate(300deg) }
+.num.ten span { transform: rotate(150deg) }
+
+.num.eleven { transform: rotate(330deg) }
+.num.eleven span { transform: rotate(120deg) }
+
+.num.twelve { transform: rotate(360deg) }
+.num.twelve span { transform: rotate(90deg) }

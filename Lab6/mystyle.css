@@ -1,0 +1,195 @@
+﻿.page .entry-content, .single .entry-content {
+    max-width: 100%;
+}
+
+.header-image .site-header {
+    display: none;
+}
+
+.entry-header {
+    text-align: center;
+}
+
+.p {
+    text-align: center;
+}
+
+.page .entry-header, .single .entry-header {
+    display: none;
+}
+
+.site-footer {
+    display: none;
+}
+
+.site-inner {
+    max-width: 100%;
+    margin-top: 0 !important;
+    padding-top: 8% !important;
+    margin-left: 150px;
+}
+
+.side div:hover {
+    color: #f1f1f1;
+}
+
+.slidePreviewTile {
+    width: 5em;
+    height: 5em;
+    margin: 0 !important;
+    border: none;
+    display: inline-block;
+    padding: 0.25em;
+}
+
+.helpMenuOpenContainer {
+    float: left;
+    position: fixed;
+    left: 1em;
+}
+
+.menuButton {
+    font-size: 1.25em;
+    cursor: pointer;
+    background-color: #004484;
+    color: #fff;
+    padding: 0.25em .5em;
+    border: solid 1px #ddd;
+    border-radius: .5em;
+    box-shadow: 0 0 0.2em 0 #333;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #004484;
+    overflow-x: hidden;
+    -webkit-transition: 0.25s linear all;
+    transition: 0.25s linear all;
+}
+
+.links {
+    font-size: 1.5em;
+    padding: 0.125em .25em 0.125em 0.25em;
+    cursor: pointer;
+}
+
+.pdfLink {
+    color: blue;
+    text-decoration: underline;
+}
+
+#logo {
+    padding: 0 1.5em;
+}
+
+.imageLogo {
+    width: 100%;
+}
+
+.sidenav div {
+    padding: 0.3em .5em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    font-size: 1.5em;
+    padding-left: 5.5em;
+}
+
+.sidenav .links:hover {
+    /*color: gray;*/
+    background-color:#006696;
+}
+
+.landingPageImage {
+    margin: 0 35%;
+    width: 30% !important;
+}
+
+#main {
+    margin: 0 5%;
+    padding-left: 10em;
+    -webkit-transition: 0.25s linear padding;
+    transition: 0.25s linear padding;
+}
+
+.mainNoPadding {
+    padding-left: 0 !important;
+}
+
+#slideShow img:hover, iframe:hover {
+    background-color: #004484;
+}
+
+#box {
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+.helpDisplay {
+    width: 100%;
+/*    box-shadow: 0 0 0.3em #333;*/
+}
+
+.videohelp {
+    max-height: 25em;
+    height: 60vh;
+}
+
+#centerPDF {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#slideShow {
+    text-align: center;
+}
+
+#appBadges{
+    text-align:center;
+}
+
+.appleStore {
+    width: 13.5em;
+    height: 4.1em;
+    padding-bottom: .95em;
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.playStore {
+    width: 15em;
+    height: 6em;
+}
+
+.tryGains {
+    margin-left: .25em;
+    width: 1em;
+    height: 1em;
+    display:inline;
+}
+
+.badges{
+    display:inline-block;
+}
+
+.comingSoon {
+    padding-top: 1em;
+    margin-top: -2em;
+    font-weight:bold;
+    font-size:1em;
+}
+
+#welcome {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
