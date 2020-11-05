@@ -1,8 +1,12 @@
 ﻿function getPokemonInfo() {
+    //get user input
     let search = document.querySelector("#search");
-    let pokemon = search.value.toLowerCase();
-    console.log(pokemon);
-    clearAttackInfo();
+    let pokemon = search.value.toLowerCase().trim();
+
+    //console.log(pokemon);
+
+    //clear fields
+    reset();
 
     fetch('https://pokeapi.co/api/v2/pokemon/' + pokemon)
         .then(resp => {
@@ -10,8 +14,15 @@
         })
         .then(data => {
             console.log(data);
+            
+
             const name = data.name;
             document.querySelector("#name").innerHTML = name;
+
+            // if(document.querySelector("#name").innerText == null){
+            //     alert("error");
+            //     document.querySelector("#name").innerHTML = "Pokemon does not exist."
+            // }
 
             const image = data.sprites.front_default;
             document.querySelector("#image").innerHTML = "<img src='" + image + "'/>";
@@ -37,14 +48,7 @@
             document.querySelector("#special-defense").innerHTML = data.stats[4].base_stat;
             document.querySelector("#speed").innerHTML = data.stats[5].base_stat;
 
-            // const myList = document.querySelector("#move-list");
-            // const moves = data.moves.map(moves => moves.move);
-            // let moveItems = "";
-            // for (const move of moves) {
-            //     moveItems = moveItems + "<li>" + move.name +  "<button onclick='getMoveInfo('" + move.url + "');'>Get More Info</button>" + "</li>";
-            // }
-            // myList.innerHTML = moveItems;
-
+            //move list
             const myList = document.querySelector("#move-list");
             const moves = data.moves.map(moves => moves.move);
             for (const move of moves) {
@@ -55,15 +59,14 @@
                 var button = document.createElement('button');
                 button.innerHTML = 'Get More Info';
                 button.className="btn btn-primary btnPadding";
-                button.onclick = function () {
-                    //alert(move.name);
 
+                button.onclick = function () {
                     fetch(move.url, { headers: { "Accept": "application/json" } })
                         .then(resp => {
                             return resp.json()
                         })
                         .then(data => {
-                            console.log(data);
+                            //console.log(data);
 
                             const attackName = data.name;
                             document.querySelector("#attackName").innerHTML = attackName;
@@ -94,23 +97,29 @@
 
 }
 
-function clearAttackInfo() {
+function reset() {
     document.querySelector("#attackName").innerHTML = "";
-
-
     document.querySelector("#theFlavorText").innerHTML = "";
-
-
     document.querySelector("#accuracy").innerHTML = "";
-
-
     document.querySelector("#pp").innerHTML = "";
-
-
     document.querySelector("#power").innerHTML = "";
-
-
     document.querySelector("#attackType").innerHTML = "";
+
+    document.querySelector("#name").innerHTML = "";
+    document.querySelector("#image").innerHTML = "";
+    document.querySelector("#height").innerHTML = "";
+    document.querySelector("#weight").innerHTML = "";
+    document.querySelector("#types").innerHTML = "";
+
+    document.querySelector("#hp").innerHTML = "";
+    document.querySelector("#attack").innerHTML = "";
+    document.querySelector("#defense").innerHTML = "";
+    document.querySelector("#special-attack").innerHTML = "";
+    document.querySelector("#special-defense").innerHTML = "";
+    document.querySelector("#speed").innerHTML = "";
+
+    const myList = document.querySelector("#move-list");
+    myList.innerHTML="";
 }
 
 
