@@ -92,7 +92,10 @@
                 myList.append(listElement);
             }
 
-        })
+        }
+        ).catch(e => 
+            document.querySelector("#error").innerHTML="Pokemon does not exist."
+            )
 
 
 }
@@ -117,6 +120,8 @@ function reset() {
     document.querySelector("#special-attack").innerHTML = "";
     document.querySelector("#special-defense").innerHTML = "";
     document.querySelector("#speed").innerHTML = "";
+
+    document.querySelector("#error").innerHTML = "";
 
     const myList = document.querySelector("#move-list");
     myList.innerHTML="";
