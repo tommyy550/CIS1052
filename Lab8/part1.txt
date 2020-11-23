@@ -1,0 +1,6 @@
+1. 10 requests
+2. fonts.googleapis.com
+3. rk0.xyz, www.googleanalytics.com
+4. title,note,userId,noteId, created
+5. Express
+6. A get request is made to https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister@2x.png and a png file is returned

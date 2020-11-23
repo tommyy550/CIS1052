@@ -1,0 +1,45 @@
+.bold{
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+
+.btnPadding{
+    margin:5px;
+}
+
+.error{
+    color:red;
+}
+/* img{
+    width:3em;
+    height:3em;
+} */
+
+body{
+    background-color: lightblue !important;
+}
+
+.register{
+    text-decoration: underline;
+    color:blue;
+    cursor:pointer;
+}
+
+ul {
+   list-style-type: none;
+    font-weight: bold;
+}
+
+.add{
+    cursor:pointer;
+    color:blue;
+}
+
+.content{
+    height:100px;
+}
+
+.saveCancel{
+    margin-top:15px;
+}
