@@ -1,0 +1,90 @@
+<html>
+<header>
+    <style>
+        .container {
+            display: grid;
+            height: 100%;
+            gap: 2px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:  "toolbar content outline" "toolbar footer outline" "header header header";
+        }
+
+        header {
+            border: solid 5px blue;
+            grid-area: header;
+        }
+
+        .toolbar {
+            border: solid 5px green;
+            grid-area: toolbar;
+        }
+
+        .content {
+            border: solid 5px red;
+            grid-area: content;
+        }
+
+        .outline {
+            border: solid 5px purple;
+            grid-area: outline;
+        }
+
+        footer {
+            border: solid 5px cyan;
+            grid-area: footer;
+        }
+    </style>
+</header>
+<body>
+    <body>
+        
+        <script>
+           function isVowel(ch){
+               let x=ch.toLowerCase();
+               if(x=="a" || x=="e" || x=="i" || x=="o" || x=="u"){
+                   return true;
+               }
+               return false;
+           } 
+
+           function vowelConCheck(name){
+               let lenOfWord=name.length;
+               let vowels=0;
+               let cons=0;
+               for( const letter of name){
+                   if(isVowel(letter)){
+                       vowels++;
+                   }
+                   else{
+                       cons++;
+                   }
+               }
+               let vowelPercent= vowels/lenOfWord;
+               let consPercent=cons/lenOfWord;
+               if(vowelPercent>0.9 || consPercent>0.9){
+                   return true;
+               }
+               return false;
+           }
+
+           function invalidLength(name){
+               let len=name.length;
+               if(len<3 || len>15){
+                   return true;
+               }
+               return false;
+           }
+
+           function validName(name){
+               if(invalidLength(name) || vowelConCheck(name)){
+                   return false;
+               }
+               return true;
+           }
+        </script>
+      </body>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<html>
+<header>
+
+</header>
+
+<body>
+    <input type="text" id="search" name="search" placeholder="Enter Pokemon">
+    <button onclick="compare();">Compare with charizard</button>
+    <p id="msg"></p>
+    <script>
+        function compare() {
+            let search = document.querySelector("#search");
+            let pokemon = search.value.toLowerCase().trim();
+
+
+            fetch('https://pokeapi.co/api/v2/pokemon/' + pokemon)
+                .then(resp => {
+                    return resp.json()
+                })
+                .then(data => {
+                    console.log(data);
+                    let atk = data.stats[1].base_stat;
+                    let def = data.stats[2].base_stat;
+                    let types = data.types;
+                    console.log(types);
+                    let charizardAtk = 60;
+                    let charizardDef = 50;
+
+                    if (compareAtkandDef(atk, def, charizardAtk, charizardDef, types)) {
+                        document.querySelector("#msg").innerHTML = data.name + " is stronger than charizard";
+                    }
+                    else {
+                        document.querySelector("#msg").innerHTML = data.name + " is not stronger than charizard";
+                    }
+
+
+                }
+                ).catch(e =>
+                    document.querySelector("#msg").innerHTML = "Pokemon does not exist."
+                )
+        }
+
+        function compareAtkandDef(atk, def, charizardAtk, charizardDef, type) {
+            let sum = atk + def;
+            let charizardSum = charizardAtk + charizardDef;
+            if (sum > charizardSum) {
+                return true;
+            }
+            if ((sum > (0.5 * charizardSum)) && goodType(type)) {
+                return true;
+            }
+            return false;
+
+        }
+
+        function goodType(arrTypes) {
+            for (const t of arrTypes) {
+                let type = t.type.name;
+                console.log(type);
+                if (type == "water" || type == "ground" || type == "rock") {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>

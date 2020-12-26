@@ -1,0 +1,23 @@
+<html>
+    <header>
+
+    </header>
+    <body>
+        <input id="txtBox" oninput="myFunc();">
+        <br>
+        <p id="echo"></p>
+        <script>
+            function myFunc(){
+                let val =document.querySelector("#txtBox").value;
+                document.getElementById("echo").innerHTML=val;
+                if(val.length>15){
+                    document.getElementById("echo").style.color="red";
+                }
+                else{
+                    document.getElementById("echo").style.removeProperty("color");  
+                }
+                
+            }
+        </script>
+    </body>
+</html>

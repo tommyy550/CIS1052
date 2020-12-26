@@ -1,4 +1,5 @@
-﻿function getNotes(userID) {
+﻿
+function getNotes(userID) {
     fetch("https://spy-notes-api.rk0.xyz/users/" + userID + "/notes")
         .then(resp => resp.json())
         .then(data => {
@@ -27,7 +28,7 @@
 
                 del.onclick = function () {
                   deleteNote(userID,note.noteId);
-                  getNotes(userID);
+                  
                   
                 };
                 listElement.append(button);
@@ -83,7 +84,9 @@ function saveNote(){
     var content=document.getElementById("content").value;
     createNote(userID,title,content);
     cancelNote();
-    getNotes(userID);
+    setTimeout(() => {
+        location.reload();
+    },200);
 }
 
 function viewMode(){

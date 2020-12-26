@@ -1,0 +1,58 @@
+<html>
+<header>
+    <style>
+        .container {
+            display: grid;
+            height: 100%;
+            gap: 2px;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:  "instacat instacat signup signup" "cat1 cat2 cat3" "copy copy copy";
+        }
+
+        .copy {
+            border: solid 5px blue;
+            grid-area: copy;
+        }
+
+        .instacat {
+            border: solid 5px red;
+            grid-area: instacat;
+        }
+
+        .signup {
+            border: solid 5px red;
+            grid-area: signup;
+        }
+
+        .cat1 {
+            border: solid 5px green;
+            grid-area: cat1;
+        }
+
+        .cat2 {
+            border: solid 5px green;
+            grid-area: cat2;
+        }
+        .cat3 {
+            border: solid 5px green;
+            grid-area: cat3;
+        }
+    </style>
+</header>
+<body>
+    <body>
+        <div class="container">
+          
+            <div class="instacat">Instacat</div>
+            <div class="signup">Sign Up Here</div>
+            <div class="cat1"><img src="https://templeu.instructure.com/courses/81125/files/11648341/preview"></div>
+            <div class="cat2"><img src="https://templeu.instructure.com/courses/81125/files/11648341/preview"></div>
+            <div class="cat3"><img src="https://templeu.instructure.com/courses/81125/files/11648341/preview"></div>
+          <div class="copy">Copyright 2020</div>
+        </div>
+      </body>
+
+</body>
+
+</html>
